@@ -45,7 +45,7 @@ async function TreatmentsPageContent({ params }: { params: Promise<{ locale: str
             <div className="relative h-64 overflow-hidden">
               <Image
                 src={treatment.image}
-                alt={treatment.imageAlt}
+                alt={treatment.imageAlt[currentLocale]}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
                 loading={index === 0 ? "eager" : "lazy"}

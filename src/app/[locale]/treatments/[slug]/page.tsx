@@ -74,7 +74,7 @@ async function TreatmentDetailPageContent({ params }: { params: Promise<{ locale
         <div className="relative h-[440px] overflow-hidden rounded-[2rem] border border-[var(--border)]">
           <Image
             src={treatment.image}
-            alt={treatment.imageAlt}
+            alt={treatment.imageAlt[currentLocale]}
             fill
             sizes="(max-width: 1024px) 100vw, 45vw"
             className="object-cover"

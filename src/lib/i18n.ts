@@ -29,17 +29,17 @@ export const en = {
   },
   home: {
     heroEyebrow: "Ayurvedic clinic · Thiruvananthapuram",
-    heroTitle: "Traditional Ayurveda. Personal care.",
+    heroTitle: "Traditional Ayurvedic care, tailored to you.",
     heroDescription:
-      "Explore traditional Ayurvedic therapies and personalized consultations at Idhaya Ayurveda in Thiruvananthapuram, Kerala.",
+      "Discover traditional Ayurvedic therapies and one-to-one consultations at Idhaya Ayurveda in Thiruvananthapuram, Kerala.",
     introEyebrow: "Welcome to Idhaya Ayurveda",
     introTitle: "Care guided by Ayurvedic tradition",
     introBody:
-      "Meet with Dr. Adarsh S.S. to discuss your health concerns and learn whether an Ayurvedic consultation or therapy may be suitable for you.",
+      "Speak with Dr. Adarsh S.S. about your health concerns and whether a consultation or therapy may be appropriate for you.",
     featured: "Explore our therapies",
     featuredTitle: "Traditional therapies, individual assessment",
     featuredBody:
-      "Treatment choice and suitability are discussed with the physician. Explore the services advertised by the clinic.",
+      "Every care option should be discussed with the physician, who can assess whether it may suit your needs. Explore the services offered by the clinic.",
     facilities: "Consultation and care",
     facilityItems: [
       {
@@ -57,7 +57,7 @@ export const en = {
     ],
     whyTitle: "Care that starts with a conversation",
     whyBody:
-      "A consultation helps the physician understand your concerns before discussing possible care. No treatment is suitable for everyone, and outcomes cannot be guaranteed.",
+      "A consultation gives the physician a chance to understand your concerns and discuss possible next steps. Care is individual, and results cannot be guaranteed.",
     appointmentCta: "Speak with the clinic about an appointment",
     appointmentHeading: "A conversation is the first step",
     contactTitle: "Find Idhaya Ayurveda",
@@ -75,10 +75,10 @@ export const en = {
   about: {
     title: "About Idhaya Ayurveda",
     intro:
-      "Idhaya Ayurveda is an Ayurvedic clinic in Thiruvananthapuram, Kerala. The clinic offers consultations and traditional therapies with individual assessment.",
+      "Idhaya Ayurveda is a clinic in Thiruvananthapuram, Kerala, offering consultations and traditional therapies following an individual assessment.",
     approachTitle: "A considered approach to care",
     approachBody:
-      "Care begins with a conversation about your concerns and health history. The physician can explain possible options, expected steps, and precautions before you decide whether to proceed.",
+      "Care starts with a conversation about your concerns and health history. Before you decide on any therapy, the physician can explain the available options, what they involve, and relevant precautions.",
     doctorTitle: "Meet the physician",
     doctorBody:
       "Dr. Adarsh S.S. is listed by the clinic as an Ayurvedic Physician. Please contact the clinic to discuss a consultation.",
@@ -91,7 +91,7 @@ export const en = {
   treatments: {
     title: "Ayurvedic treatments",
     subtitle:
-      "Learn about the traditional therapies listed by Idhaya Ayurveda. A physician should assess suitability before any treatment.",
+      "Explore the traditional therapies offered by Idhaya Ayurveda. A physician should assess whether a therapy is appropriate for you before it begins.",
     details: "About this therapy",
     procedure: "What the therapy may involve",
     suitability: "Assessment and suitability",
@@ -216,26 +216,26 @@ export const ml: typeof en = {
   },
   home: {
     heroEyebrow: "ആയുർവേദ ക്ലിനിക് · തിരുവനന്തപുരം",
-    heroTitle: "പാരമ്പര്യ ആയുർവേദം. വ്യക്തിഗത പരിചരണം.",
+    heroTitle: "ആയുർവേദ പാരമ്പര്യത്തിൽ, നിങ്ങൾക്കായുള്ള വ്യക്തിഗത പരിചരണം.",
     heroDescription:
-      "കേരളത്തിലെ തിരുവനന്തപുരത്തുള്ള ഇധയ ആയുർവേദത്തിൽ പാരമ്പര്യ ചികിത്സാരീതികളെയും വ്യക്തിഗത ആയുർവേദ കൺസൾട്ടേഷനെയും കുറിച്ച് അറിയൂ.",
-    introEyebrow: "ഇധയ ആയുർവേദത്തിലേക്ക് സ്വാഗതം",
-    introTitle: "ആയുർവേദ പാരമ്പര്യത്തിന്റെ വഴിയിലുള്ള പരിചരണം",
+      "കേരളത്തിലെ തിരുവനന്തപുരത്തുള്ള ഇധയ ആയുർവേദ ക്ലിനിക്കിലെ പരമ്പരാഗത ചികിത്സാരീതികളും വ്യക്തിഗത കൺസൾട്ടേഷനുകളും പരിചയപ്പെടൂ.",
+    introEyebrow: "ഇധയ ആയുർവേദ ക്ലിനിക്കിലേക്ക് സ്വാഗതം",
+    introTitle: "ആയുർവേദ പാരമ്പര്യത്തിൽ നിന്നുള്ള കരുതലോടെയുള്ള പരിചരണം",
     introBody:
-      "നിങ്ങളുടെ ആരോഗ്യപ്രശ്നങ്ങൾ ഡോ. ആദർശ് എസ്. എസുമായി ചർച്ച ചെയ്യൂ. കൺസൾട്ടേഷനോ ചികിത്സയോ നിങ്ങൾക്ക് അനുയോജ്യമാണോ എന്ന് ഡോക്ടർ വിലയിരുത്തും.",
+      "നിങ്ങളുടെ ആരോഗ്യപ്രശ്നങ്ങൾ ഡോ. ആദർശ് എസ്. എസുമായി ചർച്ച ചെയ്യൂ. നിങ്ങളുടെ ആവശ്യങ്ങൾ വിലയിരുത്തിയ ശേഷം അനുയോജ്യമായ പരിചരണസാധ്യതകൾ ഡോക്ടർ വിശദീകരിക്കും.",
     featured: "ചികിത്സകൾ പരിചയപ്പെടാം",
     featuredTitle: "വ്യക്തിഗത വിലയിരുത്തലോടെയുള്ള പാരമ്പര്യ ചികിത്സകൾ",
     featuredBody:
-      "ചികിത്സയും അതിന്റെ അനുയോജ്യതയും ഡോക്ടറുമായി ചർച്ച ചെയ്താണ് തീരുമാനിക്കേണ്ടത്. ക്ലിനിക് നൽകുന്ന ചികിത്സാവിവരങ്ങൾ അറിയൂ.",
+      "ചികിത്സ തിരഞ്ഞെടുക്കുന്നതിന് മുമ്പ് അതിന്റെ അനുയോജ്യത ഡോക്ടറുമായി ചർച്ച ചെയ്യുക. ക്ലിനിക്കിൽ ലഭ്യമായ ചികിത്സകളെക്കുറിച്ച് അറിയൂ.",
     facilities: "കൺസൾട്ടേഷനും പരിചരണവും",
     facilityItems: [
       {
         title: "ആയുർവേദ കൺസൾട്ടേഷൻ",
-        body: "നിങ്ങളുടെ ആരോഗ്യപ്രശ്നങ്ങളും പരിചരണസാധ്യതകളും ഡോക്ടറുമായി നേരിട്ട് ചർച്ച ചെയ്യാം.",
+        body: "ആരോഗ്യപ്രശ്നങ്ങളും പരിചരണത്തിനുള്ള സാധ്യതകളും ഡോക്ടറുമായി നേരിട്ട് ചർച്ച ചെയ്യാം.",
       },
       {
         title: "ചികിത്സാ ആസൂത്രണം",
-        body: "നിങ്ങളുടെ ആവശ്യങ്ങൾക്ക് ചികിത്സ അനുയോജ്യമാണോ എന്ന് ഡോക്ടർ വിലയിരുത്തും.",
+        body: "നിങ്ങളുടെ ആരോഗ്യാവസ്ഥയും ആവശ്യങ്ങളും പരിഗണിച്ച് ചികിത്സ അനുയോജ്യമാണോ എന്ന് ഡോക്ടർ വിലയിരുത്തും.",
       },
       {
         title: "അപ്പോയിന്റ്മെന്റിന് ബന്ധപ്പെടുക",
@@ -244,10 +244,10 @@ export const ml: typeof en = {
     ],
     whyTitle: "പരിചരണം ഒരു സംഭാഷണത്തിൽ തുടങ്ങുന്നു",
     whyBody:
-      "ആരോഗ്യപ്രശ്നങ്ങൾ മനസ്സിലാക്കിയ ശേഷമാണ് ഡോക്ടർ പരിചരണസാധ്യതകൾ ചർച്ച ചെയ്യുന്നത്. എല്ലാ ചികിത്സകളും എല്ലാവർക്കും അനുയോജ്യമാവണമെന്നില്ല; ഫലങ്ങൾ ഉറപ്പുനൽകാനുമാവില്ല.",
+      "നിങ്ങളുടെ ആരോഗ്യപ്രശ്നങ്ങൾ മനസ്സിലാക്കിയ ശേഷമാണ് ഡോക്ടർ പരിചരണസാധ്യതകൾ ചർച്ച ചെയ്യുക. ഒരു ചികിത്സ എല്ലാവർക്കും അനുയോജ്യമാകണമെന്നില്ല; ഫലങ്ങൾ ഉറപ്പുനൽകാനുമാവില്ല.",
     appointmentCta: "അപ്പോയിന്റ്മെന്റിനായി ക്ലിനിക്കുമായി സംസാരിക്കൂ",
-    appointmentHeading: "പരിചരണത്തിലേക്കുള്ള ആദ്യ ചുവട് ഒരു സംഭാഷണം",
-    contactTitle: "ഇധയ ആയുർവേദം കണ്ടെത്താം",
+    appointmentHeading: "പരിചരണത്തിലേക്കുള്ള ആദ്യ ചുവട്: ഒരു സംഭാഷണം",
+    contactTitle: "ഇധയ ആയുർവേദ ക്ലിനിക്കിലെത്താം",
     mapLabel: "ഗൂഗിൾ മാപ്‌സിൽ ക്ലിനിക്കിന്റെ സ്ഥാനം തുറക്കുക",
     serviceListTitle: "ക്ലിനിക്കിലെ സേവനങ്ങൾ",
     services: [
@@ -260,42 +260,42 @@ export const ml: typeof en = {
     illustrativePhoto: "ഔഷധസസ്യങ്ങളെ ആസ്പദമാക്കിയുള്ള പ്രതിനിധി ചിത്രം",
   },
   about: {
-    title: "ഇധയ ആയുർവേദത്തെക്കുറിച്ച്",
+    title: "ഇധയ ആയുർവേദ ക്ലിനിക്കിനെക്കുറിച്ച്",
     intro:
-      "കേരളത്തിലെ തിരുവനന്തപുരത്തുള്ള ആയുർവേദ ക്ലിനിക്കാണ് ഇധയ ആയുർവേദം. വ്യക്തിഗത വിലയിരുത്തലോടെയുള്ള കൺസൾട്ടേഷനുകളും പാരമ്പര്യ ചികിത്സകളും ഇവിടെ ലഭ്യമാണ്.",
+      "കേരളത്തിലെ തിരുവനന്തപുരം ജില്ലയിൽ പ്രവർത്തിക്കുന്ന ക്ലിനിക്കാണ് ഇധയ ആയുർവേദ. വ്യക്തിഗത വിലയിരുത്തലിന് ശേഷം കൺസൾട്ടേഷനുകളും പരമ്പരാഗത ചികിത്സകളും ഇവിടെ ലഭ്യമാണ്.",
     approachTitle: "ശ്രദ്ധയോടെയുള്ള പരിചരണം",
     approachBody:
-      "നിങ്ങളുടെ ആരോഗ്യപ്രശ്നങ്ങളും ആരോഗ്യചരിത്രവും മനസ്സിലാക്കിയാണ് പരിചരണം തുടങ്ങുന്നത്. ചികിത്സ തിരഞ്ഞെടുക്കുന്നതിന് മുമ്പ് സാധ്യതകൾ, നടപടികൾ, മുൻകരുതലുകൾ എന്നിവ ഡോക്ടർ വിശദീകരിക്കും.",
+      "നിങ്ങളുടെ ആരോഗ്യപ്രശ്നങ്ങളും ആരോഗ്യചരിത്രവും മനസ്സിലാക്കിയ ശേഷമാണ് പരിചരണം തുടങ്ങുന്നത്. ചികിത്സ തിരഞ്ഞെടുക്കുന്നതിന് മുമ്പ് ലഭ്യമായ മാർഗങ്ങളും നടപടിക്രമങ്ങളും മുൻകരുതലുകളും ഡോക്ടർ വിശദീകരിക്കും.",
     doctorTitle: "ഡോക്ടറെ പരിചയപ്പെടാം",
     doctorBody:
-      "ഡോ. ആദർശ് എസ്. എസ്. ആയുർവേദ ഫിസിഷ്യനാണെന്ന് ക്ലിനിക് പരിചയപ്പെടുത്തുന്നു. കൺസൾട്ടേഷനായി ക്ലിനിക്കുമായി ബന്ധപ്പെടുക.",
+      "ക്ലിനിക്കിന്റെ വിവരമനുസരിച്ച്, ഡോ. ആദർശ് എസ്. എസ്. ആയുർവേദ ചികിത്സകനാണ്. കൺസൾട്ടേഷനായി ക്ലിനിക്കുമായി ബന്ധപ്പെടുക.",
     clinicTitle: "ക്ലിനിക്",
     clinicBody:
-      "തിരുവനന്തപുരം ഉബിയൻകുളങ്ങരയിലെ ആനന്ദ് ഡ്രൈവിംഗ് സ്കൂൾ ബിൽഡിംഗിലാണ് ക്ലിനിക്. സന്ദർശിക്കുന്നതിന് മുമ്പ് അപ്പോയിന്റ്മെന്റ് ലഭ്യത ഉറപ്പാക്കാൻ ബന്ധപ്പെടുക.",
+      "തിരുവനന്തപുരം ഉബിയൻകുളങ്ങരയിലെ ആനന്ദ് ഡ്രൈവിംഗ് സ്കൂൾ കെട്ടിടത്തിലാണ് ക്ലിനിക്. സന്ദർശിക്കുന്നതിന് മുമ്പ് സമയം ഉറപ്പാക്കാൻ ബന്ധപ്പെടുക.",
     cta: "അപ്പോയിന്റ്മെന്റ് അഭ്യർത്ഥിക്കുക",
-    imageAlt: "ക്ലിനിക് പ്രവേശനഭാഗത്തെ ഇധയ ആയുർവേദത്തിന്റെ ബോർഡ്",
+    imageAlt: "ക്ലിനിക് പ്രവേശനത്തിലെ ഇധയ ആയുർവേദ ബോർഡ്",
   },
   treatments: {
-    title: "ആയുർവേദ ചികിത്സകൾ",
+    title: "ആയുർവേദ ചികിത്സാരീതികൾ",
     subtitle:
-      "ഇധയ ആയുർവേദം നൽകുന്ന പാരമ്പര്യ ചികിത്സകളെക്കുറിച്ച് അറിയൂ. ഏതെങ്കിലും ചികിത്സയ്ക്ക് മുമ്പ് ഡോക്ടർ അനുയോജ്യത വിലയിരുത്തണം.",
+      "ഇധയ ആയുർവേദ ക്ലിനിക്കിൽ ലഭ്യമായ പരമ്പരാഗത ചികിത്സകളെക്കുറിച്ച് അറിയൂ. ചികിത്സ തുടങ്ങുന്നതിന് മുമ്പ് ഡോക്ടർ അത് നിങ്ങൾക്ക് അനുയോജ്യമാണോ എന്ന് വിലയിരുത്തണം.",
     details: "ചികിത്സയെക്കുറിച്ച്",
     procedure: "ചികിത്സയിൽ ഉൾപ്പെടാവുന്ന രീതികൾ",
     suitability: "വിലയിരുത്തലും അനുയോജ്യതയും",
     precautions: "മുൻകരുതലുകൾ",
     consult:
-      "ഇത് പൊതുവിവരം മാത്രമാണ്; രോഗനിർണയമോ ചികിത്സാ നിർദേശമോ അല്ല. ആദ്യം ഡോക്ടറെ സമീപിക്കുക. അനുയോജ്യത ഓരോരുത്തരിലും വ്യത്യാസപ്പെടും.",
+      "ഇവ പൊതുവിവരങ്ങൾ മാത്രമാണ്; രോഗനിർണയമോ വ്യക്തിഗത ചികിത്സാനിർദേശമോ അല്ല. ചികിത്സ പരിഗണിക്കുന്നതിന് മുമ്പ് ഡോക്ടറുടെ ഉപദേശം തേടുക. അനുയോജ്യത ഓരോരുത്തർക്കും വ്യത്യസ്തമാണ്.",
     medicalNote:
-      "അടിയന്തരമോ തെളിവാധിഷ്ഠിതമോ ആയ ചികിത്സകൾക്ക് പകരമല്ല ഈ ചികിത്സകൾ. പുതിയതോ കഠിനമോ കൂടിവരുന്നതോ ആയ ലക്ഷണങ്ങൾക്ക് വൈദ്യപരിശോധന വൈകിക്കരുത്.",
+      "ഈ ചികിത്സകൾ അടിയന്തരമോ തെളിവാധിഷ്ഠിതമോ ആയ വൈദ്യപരിചരണത്തിന് പകരമല്ല. പുതിയതോ കഠിനമോ വഷളാകുന്നതോ ആയ ലക്ഷണങ്ങളുണ്ടെങ്കിൽ വൈദ്യസഹായം തേടുന്നത് വൈകിക്കരുത്.",
     imageAlt: "ആയുർവേദ ചികിത്സയെ പ്രതിനിധീകരിക്കുന്ന ചിത്രം",
   },
   doctor: {
     title: "ഡോ. ആദർശ് എസ്. എസ്.",
-    subtitle: "ആയുർവേദ ഫിസിഷ്യൻ",
+    subtitle: "ആയുർവേദ ചികിത്സകൻ",
     credentials: "ക്ലിനിക് നൽകിയ യോഗ്യതകൾ",
     registration: "രജിസ്ട്രേഷൻ നമ്പർ",
     bio:
-      "ഡോ. ആദർശ് എസ്. എസ്. ആയുർവേദ ഫിസിഷ്യനാണെന്നും BAMS, PGDAGM (Ayu) യോഗ്യതകളുണ്ടെന്നും ക്ലിനിക് അറിയിച്ചിട്ടുണ്ട്. അവയെ ആശ്രയിക്കുന്നതിന് മുമ്പ് യോഗ്യതകളും രജിസ്ട്രേഷനും ക്ലിനിക്കുമായി നേരിട്ട് സ്ഥിരീകരിക്കുക.",
+      "ക്ലിനിക്കിന്റെ വിവരമനുസരിച്ച്, ഡോ. ആദർശ് എസ്. എസ്. ആയുർവേദ ചികിത്സകനും BAMS, PGDAGM (Ayu) യോഗ്യതകളുള്ളയാളുമാണ്. യോഗ്യതകളും രജിസ്ട്രേഷനും ക്ലിനിക്കുമായി നേരിട്ട് സ്ഥിരീകരിക്കുക.",
     photoAlt: "ഡോ. ആദർശ് എസ്. എസ്.",
     qualificationNote:
       "ഈ യോഗ്യതാ വിവരങ്ങൾ ക്ലിനിക് നൽകിയതാണ്. കൂടുതൽ വിവരങ്ങൾക്ക് ക്ലിനിക്കുമായി ബന്ധപ്പെടുക.",
@@ -360,8 +360,8 @@ export const ml: typeof en = {
     visit: "സന്ദർശിക്കുക / ബന്ധപ്പെടുക",
     hours: "കൺസൾട്ടേഷൻ സമയം",
     summary:
-      "കേരളത്തിലെ തിരുവനന്തപുരത്ത് പാരമ്പര്യ ആയുർവേദ കൺസൾട്ടേഷനുകളും ചികിത്സകളും.",
-    copyright: "© ഇധയ ആയുർവേദം. എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തം.",
+      "കേരളത്തിലെ തിരുവനന്തപുരത്ത് പരമ്പരാഗത ആയുർവേദ കൺസൾട്ടേഷനും ചികിത്സകളും.",
+    copyright: "© ഇധയ ആയുർവേദ. എല്ലാ അവകാശങ്ങളും സംരക്ഷിതം.",
     privacy: "സ്വകാര്യതാ അറിയിപ്പ്",
   },
   notFound: {

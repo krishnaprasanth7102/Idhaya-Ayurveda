@@ -34,7 +34,7 @@ export function FeaturedTreatments({ locale, dict }: { locale: "en" | "ml"; dict
             <div className="relative h-64 overflow-hidden">
               <Image
                 src={treatment.image}
-                alt={treatment.imageAlt}
+                alt={treatment.imageAlt[locale]}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
                 loading={index === 0 ? "eager" : "lazy"}

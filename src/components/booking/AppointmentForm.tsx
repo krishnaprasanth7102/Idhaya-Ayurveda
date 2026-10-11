@@ -40,7 +40,7 @@ export function AppointmentForm({
     const details =
       locale === "ml"
         ? [
-            "നമസ്കാരം ഇധയ ആയുർവേദം, ഒരു അപ്പോയിന്റ്മെന്റ് അഭ്യർത്ഥിക്കുന്നു.",
+            "നമസ്കാരം, ഇധയ ആയുർവേദ ക്ലിനിക്കിൽ ഒരു അപ്പോയിന്റ്മെന്റ് അഭ്യർത്ഥിക്കുന്നു.",
             `${dict.appointment.fields.name}: ${values.name}`,
             `${dict.appointment.fields.phone}: ${values.phone}`,
             `${dict.appointment.fields.date}: ${values.date}`,
