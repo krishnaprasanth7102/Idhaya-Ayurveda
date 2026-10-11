@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { AppointmentForm } from "@/components/booking/AppointmentForm";
 import { getDictionary } from "@/lib/i18n";
 import { localizedMetadata } from "@/lib/metadata";
@@ -14,7 +15,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   );
 }
 
-export default async function AppointmentPage({ params }: { params: Promise<{ locale: string }> }) {
+export default function AppointmentPage({ params }: { params: Promise<{ locale: string }> }) {
+  return (
+    <Suspense fallback={<div className="min-h-[50vh]" aria-busy="true" />}>
+      <AppointmentPageContent params={params} />
+    </Suspense>
+  );
+}
+
+async function AppointmentPageContent({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const currentLocale = locale === "ml" ? "ml" : "en";
   const dict = getDictionary(currentLocale);

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import { Suspense } from "react";
 import { Mail, MapPin, Phone, Clock3 } from "lucide-react";
 import { clinic } from "@/config/clinic";
 import { getDictionary } from "@/lib/i18n";
@@ -17,7 +17,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   );
 }
 
-export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
+export default function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
+  return (
+    <Suspense fallback={<div className="min-h-[50vh]" aria-busy="true" />}>
+      <ContactPageContent params={params} />
+    </Suspense>
+  );
+}
+
+async function ContactPageContent({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const currentLocale = locale === "ml" ? "ml" : "en";
   const dict = getDictionary(currentLocale);
@@ -45,13 +53,14 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
           </div>
         </div>
 
-        <div className="relative h-[520px] overflow-hidden rounded-[2rem] border border-[var(--border)]">
-          <Image
-            src="/images/clinic-entrance.png"
-            alt={dict.about.imageAlt}
-            fill
-            sizes="(max-width: 1024px) 100vw, 45vw"
-            className="object-cover"
+        <div className="h-[520px] overflow-hidden rounded-[2rem] border border-[var(--border)]">
+          <iframe
+            src={clinic.mapEmbedUrl}
+            title={`${clinic.name} location on Google Maps`}
+            className="h-full w-full border-0"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
           />
         </div>
       </div>

@@ -27,10 +27,7 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: {
-    default: "Idhaya Ayurveda",
-    template: "%s | Idhaya Ayurveda",
-  },
+  title: "Idhaya AYURVEDA",
   description:
     "Idhaya Ayurveda in Thiruvananthapuram offers traditional Ayurvedic therapies, personalized consultations, and focused wellness care.",
   keywords: [

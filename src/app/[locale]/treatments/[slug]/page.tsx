@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Suspense } from "react";
 import { ArrowRight, ShieldAlert } from "lucide-react";
 import { notFound } from "next/navigation";
 import { treatments, treatmentMap } from "@/lib/content";
@@ -35,7 +36,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   );
 }
 
-export default async function TreatmentDetailPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+export default function TreatmentDetailPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+  return (
+    <Suspense fallback={<div className="min-h-[50vh]" aria-busy="true" />}>
+      <TreatmentDetailPageContent params={params} />
+    </Suspense>
+  );
+}
+
+async function TreatmentDetailPageContent({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale, slug } = await params;
   const currentLocale = locale === "ml" ? "ml" : "en";
   const dict = getDictionary(currentLocale);
@@ -65,7 +74,7 @@ export default async function TreatmentDetailPage({ params }: { params: Promise<
         <div className="relative h-[440px] overflow-hidden rounded-[2rem] border border-[var(--border)]">
           <Image
             src={treatment.image}
-            alt={`${treatment.name[currentLocale]} — ${dict.treatments.imageAlt}`}
+            alt={treatment.imageAlt}
             fill
             sizes="(max-width: 1024px) 100vw, 45vw"
             className="object-cover"

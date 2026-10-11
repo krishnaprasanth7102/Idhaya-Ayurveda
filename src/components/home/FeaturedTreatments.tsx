@@ -8,8 +8,6 @@ import { treatments } from "@/lib/content";
 import type { Messages } from "@/lib/i18n";
 
 export function FeaturedTreatments({ locale, dict }: { locale: "en" | "ml"; dict: Messages }) {
-  const visible = treatments.slice(0, 4);
-
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
       <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
@@ -24,7 +22,7 @@ export function FeaturedTreatments({ locale, dict }: { locale: "en" | "ml"; dict
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-        {visible.map((treatment, index) => (
+        {treatments.map((treatment, index) => (
           <motion.div
             key={treatment.slug}
             initial={{ opacity: 0, y: 16 }}
@@ -36,14 +34,15 @@ export function FeaturedTreatments({ locale, dict }: { locale: "en" | "ml"; dict
             <div className="relative h-64 overflow-hidden">
               <Image
                 src={treatment.image}
-                alt={`${treatment.name[locale]} — ${dict.treatments.imageAlt}`}
+                alt={treatment.imageAlt}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
+                loading={index === 0 ? "eager" : "lazy"}
                 className="object-cover transition duration-500 group-hover:scale-105"
               />
             </div>
             <div className="p-6">
-              <h3 className="text-2xl font-semibold text-[var(--heading)]">{treatment.name[locale]}</h3>
+              <h3 className="text-xl font-semibold leading-tight text-[var(--heading)]">{treatment.name[locale]}</h3>
               <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{treatment.short[locale]}</p>
               <Link href={`/${locale}/treatments/${treatment.slug}`} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[var(--brand-green-soft)]">
                 {dict.actions.viewDetails} <ArrowUpRight size={15} />

@@ -8,7 +8,8 @@ export const clinic = {
   whatsapp: "https://wa.me/919526001841",
   address:
     "Anand Driving School Building, Ubhiyankulangara, Thiruvananthapuram, Kerala – 695132",
-  mapUrl: "https://share.google/RLJUvc29GWlGMQvDo",
+  mapUrl: "https://maps.app.goo.gl/Z7K2tZBFYXw6G77y6",
+  mapEmbedUrl: "https://www.google.com/maps?q=8.3767817,77.1204819&z=17&output=embed",
   registrationNumber: "23968",
   qualifications: ["BAMS", "PGDAGM (Ayu)", "Ayurvedic Physician"],
   hours: {

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Suspense } from "react";
 import { ArrowRight, CalendarCheck2, MapPin, MessageCircle, Phone, Stethoscope } from "lucide-react";
 import { getDictionary } from "@/lib/i18n";
 import { clinic } from "@/config/clinic";
@@ -23,7 +24,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   );
 }
 
-export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+export default function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  return (
+    <Suspense fallback={<div className="min-h-[50vh]" aria-busy="true" />}>
+      <HomePageContent params={params} />
+    </Suspense>
+  );
+}
+
+async function HomePageContent({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const dict = getDictionary(locale === "ml" ? "ml" : "en");
   const schema = {
@@ -57,7 +66,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       },
     ],
     url: new URL(`/${locale}`, siteUrl).toString(),
-    logo: new URL("/images/idhaya-logo.png", siteUrl).toString(),
+    logo: new URL("/images/idhaya-logo-green.png", siteUrl).toString(),
   };
 
   return (
@@ -153,7 +162,12 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--brand-green-soft)]">{dict.home.contactTitle}</p>
             <h2 className="font-[family-name:var(--font-display)] text-4xl text-[var(--heading)] sm:text-5xl">{clinic.name}</h2>
             <div className="mt-6 space-y-4 text-sm text-[var(--muted)]">
-              <p className="flex items-start gap-3"><MapPin className="mt-0.5 text-[var(--brand-green-soft)]" size={18} /> {clinic.address}</p>
+              <p className="flex items-start gap-3">
+                <MapPin className="mt-0.5 text-[var(--brand-green-soft)]" size={18} />
+                <a href={clinic.mapUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  {clinic.address}
+                </a>
+              </p>
               <p className="flex items-start gap-3"><CalendarCheck2 className="mt-0.5 text-[var(--brand-green-soft)]" size={18} /> {dict.contact.weekdayHours}: {clinic.hours.weekdays}</p>
               <p className="flex items-start gap-3"><CalendarCheck2 className="mt-0.5 text-[var(--brand-green-soft)]" size={18} /> {dict.contact.sundayHours}: {clinic.hours.sunday}</p>
             </div>

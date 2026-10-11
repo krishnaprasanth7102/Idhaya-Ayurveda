@@ -6,13 +6,14 @@ export type Treatment = {
   procedure: { en: string; ml: string };
   whoMayNeed: { en: string; ml: string };
   precautions: { en: string; ml: string };
+  imageAlt: string;
   image: string;
 };
 
 export const treatments: Treatment[] = [
   {
     slug: "kizhi",
-    name: { en: "Kizhi", ml: "കിഴി" },
+    name: { en: "Kizhi Therapy", ml: "കിഴി ചികിത്സ" },
     short: {
       en: "A traditional therapy using warm herbal boluses, considered only after an individual assessment.",
       ml: "വ്യക്തിഗത വിലയിരുത്തലിന് ശേഷം മാത്രം പരിഗണിക്കുന്ന, ചൂടുള്ള ഔഷധക്കിഴികൾ ഉപയോഗിച്ചുള്ള പാരമ്പര്യ ചികിത്സ.",
@@ -33,11 +34,12 @@ export const treatments: Treatment[] = [
       en: "Tell the practitioner about reduced skin sensation, skin conditions, fever, pregnancy, or other health conditions. Excess heat can burn skin; do not attempt this therapy at home.",
       ml: "ചർമ്മത്തിലെ സ്പർശബോധക്കുറവ്, ചർമ്മരോഗങ്ങൾ, പനി, ഗർഭാവസ്ഥ, മറ്റ് ആരോഗ്യപ്രശ്നങ്ങൾ എന്നിവ ഡോക്ടറോട് പറയുക. അമിതചൂട് പൊള്ളലേൽപ്പിക്കാം; വീട്ടിൽ ഈ ചികിത്സ പരീക്ഷിക്കരുത്.",
     },
-    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80",
+    imageAlt: "Practitioner applying warm herbal boluses during Kizhi therapy",
+    image: "/images/treatments/kizhi-therapy.jpg",
   },
   {
     slug: "abhyanga",
-    name: { en: "Abhyanga", ml: "അഭ്യംഗം" },
+    name: { en: "Abhyanga (Ayurvedic Oil Massage)", ml: "അഭ്യംഗം (ആയുർവേദ എണ്ണമസാജ്)" },
     short: {
       en: "A traditional oil massage whose suitability and method should be discussed with a practitioner.",
       ml: "അനുയോജ്യതയും രീതിയും ഡോക്ടറുമായി ചർച്ച ചെയ്യേണ്ട പാരമ്പര്യ എണ്ണമസാജ്.",
@@ -58,11 +60,12 @@ export const treatments: Treatment[] = [
       en: "Mention allergies, sensitive or broken skin, fever, recent injury, pregnancy, and any medical advice restricting massage before the session.",
       ml: "അലർജി, സെൻസിറ്റീവ് അല്ലെങ്കിൽ മുറിവുള്ള ചർമ്മം, പനി, അടുത്തകാലത്തെ പരിക്ക്, ഗർഭാവസ്ഥ, മസാജ് ഒഴിവാക്കണമെന്ന് നൽകിയ വൈദ്യോപദേശം എന്നിവ സെഷനുമുമ്പ് അറിയിക്കുക.",
     },
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80",
+    imageAlt: "Therapist applying oil during a traditional full-body massage",
+    image: "/images/treatments/abhyanga-oil-massage.jpg",
   },
   {
     slug: "steam-bath",
-    name: { en: "Steam bath", ml: "വാഷ്പസ്നാനം" },
+    name: { en: "Steam Bath (Swedana)", ml: "സ്വേദനം (ആവി ചികിത്സ)" },
     short: {
       en: "A supervised heat therapy that requires screening for heat tolerance and health conditions.",
       ml: "ചൂട് സഹിക്കാനുള്ള ശേഷിയും ആരോഗ്യാവസ്ഥകളും പരിശോധിച്ചശേഷം മേൽനോട്ടത്തിൽ മാത്രം ചെയ്യുന്ന ചികിത്സ.",
@@ -83,7 +86,8 @@ export const treatments: Treatment[] = [
       en: "Stop if you feel dizzy, faint, breathless, nauseated, or unwell. Do not use steam therapy without professional guidance if you have a condition affected by heat.",
       ml: "തലചുറ്റൽ, ബോധക്ഷയം, ശ്വാസംമുട്ടൽ, ഓക്കാനം, അസ്വസ്ഥത എന്നിവ ഉണ്ടായാൽ ഉടൻ നിർത്തുക. ചൂട് ബാധിക്കുന്ന ആരോഗ്യപ്രശ്നങ്ങളുണ്ടെങ്കിൽ വിദഗ്ധോപദേശമില്ലാതെ ചെയ്യരുത്.",
     },
-    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=80",
+    imageAlt: "Person receiving supervised herbal steam therapy in a traditional wooden Swedana chamber",
+    image: "/images/treatments/swedana-steam-chamber.svg",
   },
   {
     slug: "nasyam",
@@ -108,7 +112,8 @@ export const treatments: Treatment[] = [
       en: "Do not self-administer. Active nasal bleeding, significant congestion, allergies, recent nasal procedures, or breathing difficulty require professional review before any nasal treatment.",
       ml: "സ്വയം ചെയ്യരുത്. മൂക്കിൽ രക്തസ്രാവം, ശക്തമായ അടപ്പ്, അലർജി, അടുത്തകാലത്തെ മൂക്കിലെ ശസ്ത്രക്രിയ, ശ്വസനപ്രശ്നം എന്നിവയുണ്ടെങ്കിൽ ചികിത്സയ്ക്ക് മുമ്പ് ഡോക്ടറുടെ വിലയിരുത്തൽ നിർബന്ധമാണ്.",
     },
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80",
+    imageAlt: "Qualified practitioner administering prescribed nasal drops during Nasyam",
+    image: "/images/treatments/nasyam-practitioner.svg",
   },
   {
     slug: "kati-vasti",
@@ -133,7 +138,8 @@ export const treatments: Treatment[] = [
       en: "Tell the practitioner about reduced sensation, skin conditions, fever, pregnancy, or prior spinal problems. New weakness, numbness around the groin, or bladder/bowel changes need urgent medical assessment.",
       ml: "സ്പർശബോധക്കുറവ്, ചർമ്മപ്രശ്നങ്ങൾ, പനി, ഗർഭാവസ്ഥ, നട്ടെല്ലിലെ മുൻപ്രശ്നങ്ങൾ എന്നിവ അറിയിക്കുക. പുതിയ ബലക്കുറവ്, തുടയിടുക്കിലെ മരവിപ്പ്, മൂത്രമല നിയന്ത്രണത്തിലെ മാറ്റം എന്നിവയുണ്ടെങ്കിൽ അടിയന്തര വൈദ്യസഹായം തേടുക.",
     },
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80",
+    imageAlt: "Warm oil retained over the lower back within a dough ring during Kati Vasti",
+    image: "/images/treatments/kati-vasti.jpg",
   },
   {
     slug: "shirodhara",
@@ -158,11 +164,12 @@ export const treatments: Treatment[] = [
       en: "Scalp or eye irritation, recent head injury, severe headache, or neurological symptoms need clinical review first. Do not use this therapy to delay assessment of concerning symptoms.",
       ml: "തലയോട്ടിയിലോ കണ്ണിലോ അസ്വസ്ഥത, അടുത്തകാലത്തെ തലയ്ക്കുള്ള പരിക്ക്, കഠിനമായ തലവേദന, നാഡീസംബന്ധമായ ലക്ഷണങ്ങൾ എന്നിവയുണ്ടെങ്കിൽ ആദ്യം ഡോക്ടറെ കാണുക. ആശങ്കാജനകമായ ലക്ഷണങ്ങളുടെ പരിശോധന വൈകിക്കരുത്.",
     },
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80",
+    imageAlt: "Warm oil flowing from a vessel onto a patient's forehead during Shirodhara",
+    image: "/images/treatments/shirodhara-treatment.svg",
   },
   {
     slug: "leech-therapy",
-    name: { en: "Leech therapy", ml: "അട്ട ചികിത്സ" },
+    name: { en: "Leech Therapy (Jalauka)", ml: "അട്ട ചികിത്സ (ജലൗക)" },
     short: {
       en: "An invasive procedure requiring specialist assessment, informed consent, and strict infection-control safeguards.",
       ml: "വിദഗ്ധ വിലയിരുത്തലും അറിവോടെയുള്ള സമ്മതവും കർശനമായ അണുബാധാ നിയന്ത്രണവും ആവശ്യമായ ചികിത്സ.",
@@ -183,11 +190,12 @@ export const treatments: Treatment[] = [
       en: "Bleeding disorders, anaemia, immune suppression, pregnancy, anticoagulant medicines, and infection risk require careful medical review. Seek prompt care for persistent bleeding, fever, or spreading redness.",
       ml: "രക്തസ്രാവസംബന്ധമായ രോഗങ്ങൾ, വിളർച്ച, പ്രതിരോധശേഷിക്കുറവ്, ഗർഭാവസ്ഥ, രക്തം കട്ടപിടിക്കുന്നത് തടയുന്ന മരുന്നുകൾ, അണുബാധാ സാധ്യത എന്നിവയിൽ സൂക്ഷ്മമായ വൈദ്യപരിശോധന വേണം. രക്തസ്രാവം തുടരുക, പനി, ചുവപ്പ് പടരുക എന്നിവയുണ്ടെങ്കിൽ ഉടൻ ചികിത്സ തേടുക.",
     },
-    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80",
+    imageAlt: "Illustration of leech therapy being performed in a clean clinical setting",
+    image: "/images/treatments/leech-therapy-clinical.svg",
   },
   {
     slug: "cupping-therapy",
-    name: { en: "Cupping therapy", ml: "കപ്പിംഗ് തെറാപ്പി" },
+    name: { en: "Cupping Therapy", ml: "കപ്പിംഗ് തെറാപ്പി" },
     short: {
       en: "A suction-based procedure with possible side effects that should be discussed with a qualified practitioner.",
       ml: "പാർശ്വഫലങ്ങൾക്ക് സാധ്യതയുള്ള സക്ഷൻ ചികിത്സ; യോഗ്യതയുള്ള ഡോക്ടറുമായി ചർച്ച ചെയ്തശേഷം മാത്രം പരിഗണിക്കുക.",
@@ -208,7 +216,8 @@ export const treatments: Treatment[] = [
       en: "Bruising, burns, infection, and bleeding are possible. Tell the practitioner about skin conditions, bleeding risk, anticoagulant medicines, pregnancy, or immune conditions. Avoid unsterile or self-administered procedures.",
       ml: "ചതവ്, പൊള്ളൽ, അണുബാധ, രക്തസ്രാവം എന്നിവ സംഭവിക്കാം. ചർമ്മരോഗം, രക്തസ്രാവസാധ്യത, രക്തം കട്ടപിടിക്കുന്നത് തടയുന്ന മരുന്നുകൾ, ഗർഭാവസ്ഥ, പ്രതിരോധശേഷിക്കുറവ് എന്നിവ അറിയിക്കുക. അണുവിമുക്തമല്ലാത്തതോ സ്വയം ചെയ്യുന്നതോ ഒഴിവാക്കുക.",
     },
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80",
+    imageAlt: "Therapist applying a cup to a patient's skin during cupping therapy",
+    image: "/images/treatments/cupping-therapy.jpg",
   },
 ];
 

@@ -12,7 +12,7 @@ export function localizedMetadata(
     path ? `/${target}/${path}` : `/${target}`;
 
   return {
-    title,
+    title: { absolute: "Idhaya AYURVEDA" },
     description,
     alternates: {
       canonical: routePath,

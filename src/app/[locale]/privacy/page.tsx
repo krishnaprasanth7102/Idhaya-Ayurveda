@@ -1,7 +1,16 @@
+import { Suspense } from "react";
 import { getDictionary } from "@/lib/i18n";
 import { localizedMetadata } from "@/lib/metadata";
 
-export default async function PrivacyPage({ params }: { params: Promise<{ locale: string }> }) {
+export default function PrivacyPage({ params }: { params: Promise<{ locale: string }> }) {
+  return (
+    <Suspense fallback={<div className="min-h-[50vh]" aria-busy="true" />}>
+      <PrivacyPageContent params={params} />
+    </Suspense>
+  );
+}
+
+async function PrivacyPageContent({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const currentLocale = locale === "ml" ? "ml" : "en";
   const dict = getDictionary(currentLocale);

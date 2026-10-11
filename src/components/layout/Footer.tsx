@@ -12,9 +12,9 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Messages }) {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.3fr_0.8fr_1fr] lg:px-8">
         <div>
           <div className="mb-5 flex items-center gap-3">
-            <div className="relative h-14 w-24 overflow-hidden rounded-xl border border-white/20 bg-white p-1">
+            <div className="relative h-14 w-24">
               <Image
-                src="/images/idhaya-logo.png"
+                src="/images/idhaya-logo-white.png"
                 alt="Idhaya Ayurveda"
                 fill
                 sizes="96px"
@@ -48,7 +48,12 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Messages }) {
               </a>
             </li>
             <li className="flex items-start gap-2"><Mail size={16} className="mt-0.5" /> <a href={clinic.emailHref}>{clinic.email}</a></li>
-            <li className="flex items-start gap-2"><MapPin size={16} className="mt-0.5" /> <span>{clinic.address}</span></li>
+            <li className="flex items-start gap-2">
+              <MapPin size={16} className="mt-0.5" />
+              <a href={clinic.mapUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                {clinic.address}
+              </a>
+            </li>
             <li className="pt-2">
               <p className="mb-1 font-semibold text-white">{dict.footer.hours}</p>
               <p>{dict.common.weekdays}</p>

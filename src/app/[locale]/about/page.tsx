@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 import { ArrowRight, MessageCircle } from "lucide-react";
 import { clinic } from "@/config/clinic";
 import { getDictionary } from "@/lib/i18n";
@@ -18,7 +19,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   );
 }
 
-export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+export default function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+  return (
+    <Suspense fallback={<div className="min-h-[50vh]" aria-busy="true" />}>
+      <AboutPageContent params={params} />
+    </Suspense>
+  );
+}
+
+async function AboutPageContent({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const currentLocale = locale === "ml" ? "ml" : "en";
   const dict = getDictionary(currentLocale);
