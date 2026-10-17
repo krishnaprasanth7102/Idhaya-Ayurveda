@@ -10,6 +10,27 @@ export type Treatment = {
   image: string;
 };
 
+export const physioAyurvedaModalities = [
+  {
+    title: "TENS Therapy",
+    description:
+      "Electrical stimulation to support pain relief, reduce muscle tension, and encourage recovery after a clinical assessment.",
+    image: "/images/physio-ayurveda/tens-therapy.jpg",
+  },
+  {
+    title: "IR Therapy",
+    description:
+      "Infrared warmth may help improve circulation, relax tissues, and support comfort in a supervised setting.",
+    image: "/images/physio-ayurveda/ir-therapy.jpeg",
+  },
+  {
+    title: "Ultrasound Therapy",
+    description:
+      "Targeted deep heating to support tissue function, mobility, and recovery as guided by clinical assessment.",
+    image: "/images/physio-ayurveda/ultrasound-therapy.jpg",
+  },
+];
+
 export const treatments: Treatment[] = [
   {
     slug: "kizhi",
@@ -68,6 +89,35 @@ export const treatments: Treatment[] = [
       ml: "പരമ്പരാഗത ശരീരമസാജിനിടെ എണ്ണ പുരട്ടുന്ന തെറാപ്പിസ്റ്റ്",
     },
     image: "/images/treatments/abhyanga-oil-massage.jpg",
+  },
+  {
+    slug: "physio-ayurveda-combo-therapy",
+    name: { en: "Physio-Ayurveda combo therapy", ml: "ഫിസിയോ-ആയുർവേദ കോമ്പോ തെറാപ്പി" },
+    short: {
+      en: "A combined care approach using supportive physiotherapy modalities alongside Ayurvedic assessment and therapy.",
+      ml: "ആയുർവേദ വിലയിരുത്തലിനൊപ്പം സഹായക ഫിസിയോതെറാപ്പി രീതികൾ ഉൾപ്പെടുത്തുന്ന സംയോജിത പരിചരണ സമീപനം.",
+    },
+    overview: {
+      en: "Physio-Ayurveda combo therapy brings together traditional Ayurvedic assessment with modern physiotherapy tools such as TENS, IR, and ultrasound therapy where appropriate.",
+      ml: "ഫിസിയോ-ആയുർവേദ സംയോജിത ചികിത്സയിൽ പരമ്പരാഗത ആയുർവേദ വിലയിരുത്തലിനൊപ്പം, അനുയോജ്യമെങ്കിൽ TENS, ഇൻഫ്രാറെഡ് (IR), അൾട്രാസൗണ്ട് തുടങ്ങിയ ഫിസിയോതെറാപ്പി രീതികളും പരിഗണിക്കുന്നു.",
+    },
+    procedure: {
+      en: "The treatment plan is selected after assessment and may involve therapies such as TENS, infrared heat, or ultrasound as part of a broader Ayurvedic care approach.",
+      ml: "വിലയിരുത്തലിന് ശേഷം, വിശാലമായ ആയുർവേദ പരിചരണ പദ്ധതിയുടെ ഭാഗമായി TENS, ഇൻഫ്രാറെഡ് ചൂട്, അൾട്രാസൗണ്ട് എന്നിവയിൽ അനുയോജ്യമായവ ഉൾപ്പെടുത്താം.",
+    },
+    whoMayNeed: {
+      en: "This may be considered for people seeking support for pain, stiffness, or recovery, after discussion with the physician about the underlying cause and goals.",
+      ml: "വേദന, മുറുക്കം, അല്ലെങ്കിൽ പുനരധിവാസം സംബന്ധിച്ച സഹായം തേടുന്നവർക്ക്, കാരണംയും പരിചരണ ലക്ഷ്യങ്ങളും ഡോക്ടറുമായി ചർച്ച ചെയ്ത ശേഷം ഇത് പരിഗണിക്കാം.",
+    },
+    precautions: {
+      en: "Comfort, heat tolerance, skin condition, and medical history should be discussed before treatment. Do not use home devices without clinical guidance.",
+      ml: "ചികിത്സയ്ക്ക് മുമ്പ് സുഖസൗകര്യം, ചൂട് സഹിക്കാനുള്ള ശേഷി, ചർമ്മാവസ്ഥ, ആരോഗ്യചരിത്രം എന്നിവ ചർച്ച ചെയ്യണം. വിദഗ്ധ നിർദ്ദേശമില്ലാതെ വീട്ടിൽ ഇത്തരം ഉപകരണങ്ങൾ ഉപയോഗിക്കരുത്.",
+    },
+    imageAlt: {
+      en: "Physio-Ayurveda combo therapy using TENS, IR, and ultrasound support",
+      ml: "TENS, IR, അൾട്രാസൗണ്ട് എന്നിവ ഉപയോഗിക്കുന്ന ഫിസിയോ-ആയുർവേദ കോമ്പോ തെറാപ്പി",
+    },
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
   },
   {
     slug: "steam-bath",

@@ -42,7 +42,7 @@ export function MobileMenu({
   }, [open]);
 
   return (
-    <div className="lg:hidden" ref={menuRef}>
+    <div ref={menuRef}>
       <button
         type="button"
         aria-label={open ? dict.nav.closeMenu : dict.nav.openMenu}

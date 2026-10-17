@@ -8,6 +8,10 @@ import { treatments } from "@/lib/content";
 import type { Messages } from "@/lib/i18n";
 
 export function FeaturedTreatments({ locale, dict }: { locale: "en" | "ml"; dict: Messages }) {
+  const featuredTreatments = treatments.filter(
+    (treatment) => treatment.slug !== "physio-ayurveda-combo-therapy",
+  );
+
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
       <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
@@ -22,7 +26,7 @@ export function FeaturedTreatments({ locale, dict }: { locale: "en" | "ml"; dict
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-        {treatments.map((treatment, index) => (
+        {featuredTreatments.map((treatment, index) => (
           <motion.div
             key={treatment.slug}
             initial={{ opacity: 0, y: 16 }}

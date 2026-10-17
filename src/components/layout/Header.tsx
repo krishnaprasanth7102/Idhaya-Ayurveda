@@ -12,15 +12,15 @@ export function Header({ locale, dict }: { locale: Locale; dict: Messages }) {
     { href: `/${locale}`, label: dict.nav.home },
     { href: `/${locale}/about`, label: dict.nav.about },
     { href: `/${locale}/treatments`, label: dict.nav.treatments },
+    { href: `/${locale}/facility`, label: dict.nav.facility },
     { href: `/${locale}/doctor`, label: dict.nav.doctor },
     { href: `/${locale}/contact`, label: dict.nav.contact },
-    { href: `/${locale}/appointment`, label: dict.nav.appointment },
   ];
 
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--border)] bg-[var(--background)]/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <Link href={`/${locale}`} className="flex items-center gap-3" aria-label="Idhaya Ayurveda home">
+        <Link href={`/${locale}`} className="flex shrink-0 items-center gap-3" aria-label="Idhaya Ayurveda home">
           <div className="relative h-12 w-20">
             <Image
               src="/images/idhaya-logo-green.png"
@@ -33,27 +33,27 @@ export function Header({ locale, dict }: { locale: Locale; dict: Messages }) {
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-6 text-sm font-medium text-[var(--muted)] xl:flex">
+        <nav className="hidden shrink-0 items-center gap-5 text-sm font-medium text-[var(--muted)] 2xl:flex">
           {items.map((item) => (
-            <Link key={item.href} href={item.href} className="transition-colors hover:text-[var(--text)]">
+            <Link key={item.href} href={item.href} className="whitespace-nowrap transition-colors hover:text-[var(--text)]">
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 xl:flex">
+        <div className="hidden shrink-0 items-center gap-3 2xl:flex">
           <LanguageSwitcher locale={locale} dict={dict} />
           <ThemeToggle label={dict.nav.toggleTheme} />
           <Link
             href={`/${locale}/appointment`}
-            className="inline-flex items-center gap-2 rounded-full bg-[var(--brand-green)] px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[var(--brand-green-deep)]"
+            className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-[var(--brand-green)] px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[var(--brand-green-deep)]"
           >
             <CalendarDays size={16} />
             {dict.nav.appointment}
           </Link>
         </div>
 
-        <div className="xl:hidden">
+        <div className="2xl:hidden">
           <div className="flex items-center gap-2">
             <ThemeToggle label={dict.nav.toggleTheme} />
             <MobileMenu items={items} locale={locale} dict={dict} />

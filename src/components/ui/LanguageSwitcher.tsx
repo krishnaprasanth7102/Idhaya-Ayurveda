@@ -15,7 +15,7 @@ export function LanguageSwitcher({
   const pathname = usePathname();
 
   return (
-    <div className="inline-flex rounded-full border border-[var(--border)] bg-[var(--card)] p-1 text-sm font-medium text-[var(--text)]">
+    <div className="inline-flex shrink-0 whitespace-nowrap rounded-full border border-[var(--border)] bg-[var(--card)] p-1 text-sm font-medium text-[var(--text)]">
       {(["en", "ml"] as const).map((option) => {
         const href = getLocalizedPath(pathname, option);
         const active = locale === option;
@@ -24,7 +24,7 @@ export function LanguageSwitcher({
           <Link
             key={option}
             href={href}
-            className={`rounded-full px-2.5 py-1.5 transition-colors ${
+            className={`whitespace-nowrap rounded-full px-2.5 py-1.5 transition-colors ${
               active ? "bg-[var(--brand-green)] text-white" : "text-[var(--muted)]"
             }`}
             aria-label={option === "en" ? dict.nav.switchToEnglish : dict.nav.switchToMalayalam}

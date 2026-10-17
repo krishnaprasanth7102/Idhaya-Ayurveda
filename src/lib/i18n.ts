@@ -6,6 +6,7 @@ export const en = {
     home: "Home",
     about: "About",
     treatments: "Treatments",
+    facility: "Treatment facility",
     doctor: "Doctor",
     contact: "Contact",
     appointment: "Book appointment",
@@ -102,6 +103,11 @@ export const en = {
       "Therapies are not a substitute for urgent or evidence-based medical care. Do not delay assessment for new, severe, or worsening symptoms.",
     imageAlt: "Illustrative image for an Ayurvedic therapy",
   },
+  facilityPage: {
+    title: "Our treatment facility",
+    intro:
+      "Take a look inside Idhaya Ayurveda, from our clinic and medicines to the spaces where traditional therapies are provided.",
+  },
   doctor: {
     title: "Dr. Adarsh S.S.",
     subtitle: "Ayurvedic Physician",
@@ -193,6 +199,7 @@ export const ml: typeof en = {
     home: "ഹോം",
     about: "ക്ലിനിക്കിനെക്കുറിച്ച്",
     treatments: "ചികിത്സകൾ",
+    facility: "ചികിത്സ സൗകര്യം",
     doctor: "ഡോക്ടർ",
     contact: "ബന്ധപ്പെടുക",
     appointment: "അപ്പോയിന്റ്മെന്റ്",
@@ -288,6 +295,11 @@ export const ml: typeof en = {
     medicalNote:
       "ഈ ചികിത്സകൾ അടിയന്തരമോ തെളിവാധിഷ്ഠിതമോ ആയ വൈദ്യപരിചരണത്തിന് പകരമല്ല. പുതിയതോ കഠിനമോ വഷളാകുന്നതോ ആയ ലക്ഷണങ്ങളുണ്ടെങ്കിൽ വൈദ്യസഹായം തേടുന്നത് വൈകിക്കരുത്.",
     imageAlt: "ആയുർവേദ ചികിത്സയെ പ്രതിനിധീകരിക്കുന്ന ചിത്രം",
+  },
+  facilityPage: {
+    title: "ഞങ്ങളുടെ ചികിത്സാ സൗകര്യം",
+    intro:
+      "ഇധയ ആയുർവേദ ക്ലിനിക്കും ഔഷധങ്ങളും പരമ്പരാഗത ചികിത്സകൾ നൽകുന്ന ഇടങ്ങളും പരിചയപ്പെടൂ.",
   },
   doctor: {
     title: "ഡോ. ആദർശ് എസ്. എസ്.",

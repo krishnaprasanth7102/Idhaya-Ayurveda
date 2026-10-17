@@ -7,6 +7,7 @@ import { clinic } from "@/config/clinic";
 import { getWhatsAppUrl } from "@/lib/contact";
 import { siteUrl } from "@/config/site";
 import { localizedMetadata } from "@/lib/metadata";
+import { physioAyurvedaModalities } from "@/lib/content";
 import { Hero } from "@/components/home/Hero";
 import { FeaturedTreatments } from "@/components/home/FeaturedTreatments";
 import { DoctorPreview } from "@/components/home/DoctorPreview";
@@ -100,6 +101,38 @@ async function HomePageContent({ params }: { params: Promise<{ locale: string }>
       </section>
 
       <FeaturedTreatments locale={locale === "ml" ? "ml" : "en"} dict={dict} />
+
+      <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--brand-green-soft)]">{dict.home.featured}</p>
+            <h2 className="font-[family-name:var(--font-display)] text-3xl text-[var(--heading)] sm:text-4xl lg:text-5xl">Physio-Ayurveda combo therapy</h2>
+          </div>
+          <Link href={`/${locale === "ml" ? "ml" : "en"}/treatments/physio-ayurveda-combo-therapy`} className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--brand-green-soft)]">
+            {dict.actions.learnMore} <ArrowRight size={16} />
+          </Link>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          {physioAyurvedaModalities.map((item) => (
+            <div key={item.title} className="overflow-hidden rounded-[1.8rem] border border-[var(--border)] bg-[var(--card)] shadow-[0_18px_40px_rgba(18,42,30,0.06)]">
+              <div className="relative h-64 overflow-hidden">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-[var(--heading)]">{item.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <SectionHeading title={dict.home.facilities} description={dict.home.featuredBody} />
