@@ -88,7 +88,7 @@ export const treatments: Treatment[] = [
       en: "Therapist applying oil during a traditional full-body massage",
       ml: "പരമ്പരാഗത ശരീരമസാജിനിടെ എണ്ണ പുരട്ടുന്ന തെറാപ്പിസ്റ്റ്",
     },
-    image: "/images/treatments/abhyanga-oil-massage.jpg",
+    image: "/images/treatments/abhyanga-oil-massage-new.jpg",
   },
   {
     slug: "physio-ayurveda-combo-therapy",
