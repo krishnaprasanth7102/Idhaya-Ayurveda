@@ -71,7 +71,7 @@ export const en = {
       "Neck and back pain management",
     ],
     consultationTitle: "Consultation hours",
-    illustrativePhoto: "Illustrative botanical wellness photograph",
+    illustrativePhoto: "Illustration of a meditating woman formed from leaves and tree branches",
   },
   about: {
     title: "About Idhaya Ayurveda",
@@ -264,7 +264,7 @@ export const ml: typeof en = {
       "കഴുത്ത്, നടുവേദന പരിചരണം",
     ],
     consultationTitle: "കൺസൾട്ടേഷൻ സമയം",
-    illustrativePhoto: "ഔഷധസസ്യങ്ങളെ ആസ്പദമാക്കിയുള്ള പ്രതിനിധി ചിത്രം",
+    illustrativePhoto: "ഇലകളും മരക്കൊമ്പുകളും ചേർന്ന ധ്യാനനിരതയായ സ്ത്രീയുടെ ചിത്രീകരണം",
   },
   about: {
     title: "ഇധയ ആയുർവേദ ക്ലിനിക്കിനെക്കുറിച്ച്",
