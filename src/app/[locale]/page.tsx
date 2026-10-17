@@ -43,7 +43,7 @@ async function HomePageContent({ params }: { params: Promise<{ locale: string }>
     email: clinic.email,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Anand Driving School Building, Ubhiyankulangara",
+      streetAddress: "Anand Driving School Building, Udyankulangara",
       addressLocality: "Thiruvananthapuram",
       addressRegion: "Kerala",
       postalCode: "695132",
@@ -80,16 +80,7 @@ async function HomePageContent({ params }: { params: Promise<{ locale: string }>
       <Hero locale={locale === "ml" ? "ml" : "en"} dict={dict} />
 
       <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="grid gap-8 rounded-[2rem] border border-[var(--border)] bg-[var(--card)] p-5 sm:p-7 lg:grid-cols-[1fr_1.1fr] lg:p-10">
-          <div className="relative h-[320px] overflow-hidden rounded-[1.5rem]">
-            <Image
-              src="/images/clinic-entrance.png"
-              alt={dict.about.imageAlt}
-              fill
-              sizes="(max-width: 1024px) 100vw, 45vw"
-              className="object-cover"
-            />
-          </div>
+        <div className="rounded-[2rem] border border-[var(--border)] bg-[var(--card)] p-5 sm:p-7 lg:p-10">
           <div>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--brand-green-soft)]">{dict.home.introEyebrow}</p>
             <h2 className="font-[family-name:var(--font-display)] text-3xl text-[var(--heading)] sm:text-4xl lg:text-5xl">{dict.home.introTitle}</h2>
@@ -157,7 +148,7 @@ async function HomePageContent({ params }: { params: Promise<{ locale: string }>
       </section>
 
       <section className="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8">
-        <div className="grid gap-8 rounded-[2rem] border border-[var(--border)] bg-[var(--card)] p-5 sm:p-8 lg:grid-cols-[1fr_1fr]">
+        <div className="grid gap-8 rounded-[2rem] border border-[var(--border)] bg-[var(--card)] p-5 sm:p-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--brand-green-soft)]">{dict.home.contactTitle}</p>
             <h2 className="font-[family-name:var(--font-display)] text-4xl text-[var(--heading)] sm:text-5xl">{clinic.name}</h2>
@@ -183,10 +174,11 @@ async function HomePageContent({ params }: { params: Promise<{ locale: string }>
               </a>
             </div>
           </div>
-          <div className="relative h-[300px] overflow-hidden rounded-[1.5rem]">
+
+          <div className="relative h-[320px] overflow-hidden rounded-[1.75rem] border border-[var(--border)]">
             <Image
-              src="/images/clinic-entrance.png"
-              alt={dict.about.imageAlt}
+              src="/images/find-idhaya.png"
+              alt="Idhaya Ayurveda treatment room"
               fill
               sizes="(max-width: 1024px) 100vw, 45vw"
               className="object-cover"

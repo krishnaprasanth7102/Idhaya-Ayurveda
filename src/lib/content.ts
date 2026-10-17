@@ -96,7 +96,7 @@ export const treatments: Treatment[] = [
       en: "Person receiving supervised herbal steam therapy in a traditional wooden Swedana chamber",
       ml: "പരമ്പരാഗത മരച്ചെമ്പിൽ മേൽനോട്ടത്തോടെ ആവിച്ചികിത്സ സ്വീകരിക്കുന്ന വ്യക്തി",
     },
-    image: "/images/treatments/swedana-steam-chamber.svg",
+    image: "/images/treatments/steam-bath.png",
   },
   {
     slug: "nasyam",
@@ -125,7 +125,7 @@ export const treatments: Treatment[] = [
       en: "Qualified practitioner administering prescribed nasal drops during Nasyam",
       ml: "നസ്യം ചികിത്സയിൽ നിർദേശിച്ച ഔഷധത്തുള്ളികൾ മൂക്കിൽ പ്രയോഗിക്കുന്ന യോഗ്യതയുള്ള ചികിത്സകൻ",
     },
-    image: "/images/treatments/nasyam-practitioner.svg",
+    image: "/images/treatments/nasyam-updated.png",
   },
   {
     slug: "kati-vasti",
@@ -183,7 +183,7 @@ export const treatments: Treatment[] = [
       en: "Warm oil flowing from a vessel onto a patient's forehead during Shirodhara",
       ml: "ശിരോധാരയിൽ പാത്രത്തിൽനിന്ന് നെറ്റിയിലേക്ക് ചൂടുള്ള എണ്ണ ഒഴുകുന്നത്",
     },
-    image: "/images/treatments/shirodhara-treatment.svg",
+    image: "/images/treatments/shirodhara.png",
   },
   {
     slug: "leech-therapy",
@@ -212,7 +212,7 @@ export const treatments: Treatment[] = [
       en: "Illustration of leech therapy being performed in a clean clinical setting",
       ml: "ശുചിത്വമുള്ള ചികിത്സാസാഹചര്യത്തിൽ അട്ട ചികിത്സ നടത്തുന്നതിന്റെ ചിത്രം",
     },
-    image: "/images/treatments/leech-therapy-clinical.svg",
+    image: "/images/treatments/leech-therapy-updated.png",
   },
   {
     slug: "cupping-therapy",

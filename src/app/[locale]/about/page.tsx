@@ -39,29 +39,17 @@ async function AboutPageContent({ params }: { params: Promise<{ locale: string }
         <h1 className="font-[family-name:var(--font-display)] text-4xl text-[var(--heading)] sm:text-6xl">{dict.about.title}</h1>
       </div>
 
-      <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-        <div className="rounded-[2rem] border border-[var(--border)] bg-[var(--card)] p-5 sm:p-8">
-          <p className="text-lg leading-8 text-[var(--muted)]">{dict.about.intro}</p>
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
-            <div className="rounded-[1.5rem] bg-[var(--soft-sage)] p-5 sm:p-6">
-              <h2 className="text-2xl font-semibold text-[var(--heading)]">{dict.about.approachTitle}</h2>
-              <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{dict.about.approachBody}</p>
-            </div>
-            <div className="rounded-[1.5rem] bg-[var(--soft-sage)] p-5 sm:p-6">
-              <h2 className="text-2xl font-semibold text-[var(--heading)]">{dict.about.clinicTitle}</h2>
-              <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{dict.about.clinicBody}</p>
-            </div>
+      <div className="rounded-[2rem] border border-[var(--border)] bg-[var(--card)] p-5 sm:p-8">
+        <p className="text-lg leading-8 text-[var(--muted)]">{dict.about.intro}</p>
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <div className="rounded-[1.5rem] bg-[var(--soft-sage)] p-5 sm:p-6">
+            <h2 className="text-2xl font-semibold text-[var(--heading)]">{dict.about.approachTitle}</h2>
+            <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{dict.about.approachBody}</p>
           </div>
-        </div>
-
-        <div className="relative h-[420px] overflow-hidden rounded-[2rem] border border-[var(--border)]">
-          <Image
-            src="/images/clinic-entrance.png"
-            alt={dict.about.imageAlt}
-            fill
-            sizes="(max-width: 1024px) 100vw, 45vw"
-            className="object-cover"
-          />
+          <div className="rounded-[1.5rem] bg-[var(--soft-sage)] p-5 sm:p-6">
+            <h2 className="text-2xl font-semibold text-[var(--heading)]">{dict.about.clinicTitle}</h2>
+            <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{dict.about.clinicBody}</p>
+          </div>
         </div>
       </div>
 

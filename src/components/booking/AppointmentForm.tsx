@@ -37,6 +37,7 @@ export function AppointmentForm({
     const selectedOption = dict.appointment.treatmentOptions.find(
       (option) => option.value === values.treatment,
     );
+    const treatmentLabel = selectedOption?.label ?? values.treatment;
     const details =
       locale === "ml"
         ? [
@@ -44,7 +45,7 @@ export function AppointmentForm({
             `${dict.appointment.fields.name}: ${values.name}`,
             `${dict.appointment.fields.phone}: ${values.phone}`,
             `${dict.appointment.fields.date}: ${values.date}`,
-            `${dict.appointment.fields.treatment}: ${selectedOption?.label ?? values.treatment}`,
+            `${dict.appointment.fields.treatment}: ${treatmentLabel}`,
             values.message
               ? `${dict.appointment.fields.message}: ${values.message}`
               : "",
@@ -54,17 +55,18 @@ export function AppointmentForm({
             `${dict.appointment.fields.name}: ${values.name}`,
             `${dict.appointment.fields.phone}: ${values.phone}`,
             `${dict.appointment.fields.date}: ${values.date}`,
-            `${dict.appointment.fields.treatment}: ${selectedOption?.label ?? values.treatment}`,
+            `${dict.appointment.fields.treatment}: ${treatmentLabel}`,
             values.message
               ? `${dict.appointment.fields.message}: ${values.message}`
               : "",
           ];
     const message = details.filter(Boolean).join("\n");
-    window.open(
-      `${clinic.whatsapp}?text=${encodeURIComponent(message)}`,
-      "_blank",
-      "noopener,noreferrer",
-    );
+    const whatsappUrl = `${clinic.whatsapp}?text=${encodeURIComponent(message)}`;
+    const popup = window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+
+    if (!popup) {
+      window.open(whatsappUrl, "_self");
+    }
   };
 
   return (

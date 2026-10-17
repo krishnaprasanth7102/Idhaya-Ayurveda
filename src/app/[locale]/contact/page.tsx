@@ -49,7 +49,7 @@ async function ContactPageContent({ params }: { params: Promise<{ locale: string
           <div className="mt-8 flex flex-wrap gap-3">
             <a href={clinic.phoneHref} className="inline-flex rounded-full bg-[var(--brand-green)] px-4 py-3 text-sm font-semibold text-white">{dict.actions.callNow}</a>
             <a href={getWhatsAppUrl(currentLocale)} target="_blank" rel="noopener noreferrer" className="inline-flex rounded-full border border-[var(--border)] bg-[var(--card)] px-4 py-3 text-sm font-semibold text-[var(--text)]">{dict.contact.whatsapp} · {clinic.phone}</a>
-            <a href={clinic.mapUrl} target="_blank" rel="noopener noreferrer" className="inline-flex rounded-full border border-[var(--border)] bg-[var(--card)] px-4 py-3 text-sm font-semibold text-[var(--text)]">{dict.contact.map}</a>
+            <a href={clinic.mapUrl} target="_blank" rel="noopener noreferrer" className="inline-flex rounded-full bg-[var(--brand-green)] px-4 py-3 text-sm font-semibold text-white">{dict.actions.directions}</a>
           </div>
         </div>
 
